@@ -1,0 +1,395 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: rgb(40, 40, 40);
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.nav-link {
+  padding-block: 12px;
+  padding-inline: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+.logo {
+  margin-inline: 35px;
+  height: 32px;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.nav-search {
+  position: absolute;
+  right: 20px;
+  padding-block: 8px;
+  width: 18%;
+  outline: none;
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 10px;
+  padding-inline: 1%;
+  font-size: 17px;
+}
+
+.nav-search::placeholder {
+  color: white;
+  font-style: italic;
+}
+
+.about-title {
+  font-size: 55px;
+  text-align: center;
+  margin-block: 50px;
+}
+
+.about-ul {
+  width: 55%;
+  font-size: 20px;
+  line-height: 35px;
+  list-style-type: square;
+  margin-inline: 22.5%;
+  margin-block: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.about-p {
+  font-size: 20px;
+  width: 55%;
+  line-height: 35px;
+  margin-inline: 22.5%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-block: 25px;
+  font-size: 14px;
+}
+
+/*body {
+ 
+}
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+  margin-block: 50px;
+}
+
+hr {
+  border: none;
+  width: 75%;
+  margin-inline: 12.5%;
+  height: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+ul {
+  width: 55%;
+  font-size: 20px;
+  line-height: 35px;
+  list-style-type: square;
+  margin-inline: 22.5%;
+  margin-block: 30px;
+}
+
+p {
+  width: 55%;
+  font-size: 20px;
+  line-height: 35px;
+  list-style-type: square;
+  margin-inline: 22.5%;
+  margin-block: 30px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-block: 25px;
+  font-size: 14px;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  padding-inline: 25px;
+}
+
+.nav {
+  background-color: black;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.fix {
+  display: inline-block;
+  padding-block: 12px;
+  padding-inline: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  background-color: transparent;
+}
+
+.fix:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+
+#feedback {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding-inline: 20px;
+  margin-inline: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-block: 8px;
+  border-radius: 50px;
+  position: absolute;
+  top: 3.65px;
+  right: 0;
+}
+
+#feedback:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  font-size: 15px;
+  color:white;
+  text-decoration: none;
+  height: 20vh;
+  padding:50px
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer a:visited {
+  color: white;
+  text-decoration-color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 50px;
+  text-decoration: underline;
+  text-decoration-color: gold;
+  text-decoration-style:wavy;
+}
+
+h2 {
+  padding: 30px;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  width: 90%;
+  margin-inline: 5%;
+  outline: none;
+  background: linear-gradient(to left, blue, red);
+  height: 5px;
+  border-radius: 30px;
+}
+
+ul {
+  width: 50%;
+  margin-inline: 25%;
+  font-size: 20px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+::selection {
+  background-color: rgba(177, 177, 177, 0.8)
+}
+
+::-webkit-scrollbar {
+  width: 0.7vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 50px;
+  border: 0.15vw solid white;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
+.welcome {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 23px;
+ line-height: 50px; 
+  display: flex;
+  flex-direction: row;
+}
+
+#welcomep {
+  width: 60%;
+  background-color: rgb(210, 210, 210);
+  padding-block: 100px;
+  padding-inline: 30px;
+}
+
+#welcomeimg {
+  width: 40%;
+  background-color: rgb(210, 210, 210);
+}
+
+#welcomeimg img {
+  width: 70%;
+  margin-inline: 15%;
+  margin-top: 100px;
+  
+}
+.welcome div {
+  width: 50%;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: rgb(128, 128, 128);
+  color: white;
+  padding: 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-inline: 20px;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: rgb(108, 108, 108);
+  transition: 0;
+}
+
+button:focus {
+  background-color: rgb(66, 66, 66);
+  transition: 0.5s;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  padding-right: 200px;
+  padding-left: 80px;
+  margin-bottom: 100px;
+}
+
+.about p {
+  width: 50%;
+  font-size: 20px;
+  line-height: 45px;
+  padding-block: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.about table {
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  font-size: 20px;
+  margin-right: 10%;
+  border-radius: 30px;
+  padding: 0;
+}
+
+.about td {
+  padding: 20px;  
+}
+
+.first {
+  border-bottom: 1px solid black;
+}
+
+.about tr {
+  border-radius: 30px;
+}
+
+td a:first-child {
+  margin-right: 120px;
+}
+
+td a {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+td a:visited {
+  color:rgb(0, 0, 0);
+}
+
+li a:visited {
+  color:rgb(48, 96, 192);
+}
+
+li a {
+  color: rgb(48, 96, 192);
+  text-decoration: none;
+}*/

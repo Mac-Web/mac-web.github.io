@@ -30,10 +30,12 @@ body {
   font-weight: bold;
   margin: 0;
   color: white;
+  border-bottom: 2px solid black;
+  transition: border-bottom 0.3s;
 }
 
 .nav-link:hover {
-  background-color: rgb(60, 60, 60);
+  border-bottom: 2px solid gold;
 }
 
 .logo {

@@ -89,12 +89,67 @@ body {
   margin-inline: 22.5%;
 }
 
-footer {
-  background-color: black;
+.wrap {
+  height: calc(100vh - 46.67px);
+  width: 100vw;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-top: 20vh;
+}
+
+.macgo {
+  width: 40%;
+}
+
+.go-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.go {
+  width: 50%;
+  padding-block: 15px;
+  padding-inline: 25px;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 18px;
+  border-radius: 30px;
+  outline: none;
   color: white;
+  box-shadow: 0px 0px 0px white;
+  transition: box-shadow 0.3s ease;
+}
+
+.go:focus {
+  box-shadow: 0px 0px 8px rgb(150, 150, 150);
+}
+
+.go::placeholder {
+  color: gray;
+  font-style: italic;
+}
+
+.footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
   text-align: center;
-  padding-block: 25px;
-  font-size: 14px;
+  font-size: 15px;
+  padding-block: 10px;
+}
+
+.item, .item a {
+  color: rgb(200, 200, 200) !important;
+}
+
+.item {
+  padding-inline: 60px;
 }
 
 /*body {

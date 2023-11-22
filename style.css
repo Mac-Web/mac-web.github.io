@@ -29,13 +29,29 @@ body {
   text-decoration: none;
   font-weight: bold;
   margin: 0;
+  position: relative;
   color: white;
   border-bottom: 2px solid black;
   transition: border-bottom 0.3s;
 }
 
-.nav-link:hover {
-  border-bottom: 2px solid gold;
+.nav-link::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  margin: 0;
+  background-color: gold;
+  transition: width 0.15s ease;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+  background-color: gold;
+  transition: width 0.2s ease;
 }
 
 .logo {

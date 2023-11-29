@@ -10,6 +10,41 @@ body {
   background-color: rgb(40, 40, 40);
 }
 
+.movingbar {
+  transform: translateX(0px) !important;
+}
+
+.macsidebar {
+  position: absolute;
+  top: 9vh;
+  left: 3px;
+  transform: translateX(-120%);
+  transition: transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-inline: 8px;
+  height: 90vh;
+  z-index: 10000000;
+  border-radius: 15px;
+  padding-block: 10px;
+  overflow: scroll;
+}
+
+.macsidebar img {
+  width: 38px;
+  margin-top: 2px;
+}
+
+.macsidebar a {
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.macsidebar a:hover {
+  transform: scale(1.2);
+}
+
 .nav {
   background-color: black;
   color: white;

@@ -28,7 +28,7 @@ body {
   z-index: 10000000;
   border-radius: 15px;
   padding-block: 10px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .macsidebar img {

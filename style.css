@@ -14,15 +14,16 @@ body {
   transform: translateX(0px) !important;
 }
 
+
 .macsidebar {
-  position: absolute;
+  position: fixed;
   top: 9vh;
   left: 3px;
   transform: translateX(-120%);
   transition: transform 0.15s ease;
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
   padding-inline: 8px;
   height: 90vh;
   z-index: 10000000;

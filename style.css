@@ -124,11 +124,12 @@ body {
 }
 
 .flex {
-  width: 70%;
-  margin-inline: 15%;
+  width: 85%;
+  margin-inline: 7.5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 40vh;
 }
 
@@ -140,8 +141,8 @@ body {
 
 .item {
   background-color: rgb(30, 30, 30);
-  width: 20%;
-  margin-inline: 2.5%;
+  width: 15%;
+  margin-inline: 1%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,7 +173,7 @@ body {
   font-weight: bold;
 }
 
-.nav-link {
+.nav-link, .olink {
   padding-block: 12px;
   padding-inline: 20px;
   font-size: 18px;
@@ -185,7 +186,7 @@ body {
   transition: border-bottom 0.3s;
 }
 
-.nav-link::after {
+.nav-link::after, .olink::before {
   content: "";
   height: 2px;
   position: absolute;
@@ -202,6 +203,24 @@ body {
   width: 80%;
   background-color: gold;
   transition: width 0.2s ease;
+}
+
+.olink {
+  transition: color 0.15s ease;
+  border-color: rgb(30, 30, 30);
+}
+
+.olink::before {
+  height: 0px;
+  transform: translateY(-50%);
+  width: 3px;
+  left: 0;
+  top: 50%;
+  transition: height 0.2s ease;
+}
+
+.olink:hover::before {
+  height: 80%;
 }
 
 .logo {
@@ -617,3 +636,70 @@ li a {
   color: rgb(48, 96, 192);
   text-decoration: none;
 }*/
+
+
+.overflowm {
+  display: none;
+  width: 40px;
+  padding: 10px;
+  height: 40px;
+  border-radius: 10px;
+  margin-inline: 25px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  transition: background-color 0.2s ease !important;
+}
+
+.overflowm:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+.overflow-menu {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-50vw);
+  width: 50vw;
+  position: absolute;
+  padding-block: 20px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 10000;
+  background-color: rgb(30, 30, 30);
+  transition: transform 0.3s ease !important;
+}
+
+.menu-slide {
+  transform: translateX(0px);
+  box-shadow: 0px 0px 10px rgb(30, 30, 30);
+}
+
+.secondselect {
+  display: none;
+}
+
+@media (width < 650px) {
+  .nav-link {
+    display: none;
+  }
+  .secondselect {
+    display: flex;
+  }
+}
+
+@media (width < 500px) {
+  .nav-link, .select {
+    display: none;
+  }
+  .logo {
+    padding-block: 8px;
+    box-sizing: content-box;
+    margin: 0;
+  }
+  .overflowm {
+    display: flex;
+  }
+}

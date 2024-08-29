@@ -4,52 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | MacWeb</title>
-    <link rel="icon" type="image/x-icon" href="/logo.png" />
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
   </head>
   <body>
-    <div class="overflow-menu shoot" id="overflow-menu">
-      <a href="macideas/" class="olink">MacIdeas</a>
-      <a href="maclearn/" class="olink">MacLearn</a>
-      <a href="mactime/" class="olink">MacTime</a>
-      <a href="macvg/" class="olink">MacVG</a>
-      <a href="macblog/" class="olink">MacBlog</a>
-    </div>
-    <nav class="nav">
-      <div class="overflowm shoot" id="overflowm">
-        <img src="bars-solid.svg" alt="Menu" class="shoot" />
-      </div>
-      <a href="/" class="logo">
-        <img src="/logo.png" alt="MacVG Logo" />
-      </a>
-      <a href="macideas/" class="nav-link">MacIdeas</a>
-      <a href="maclearn/" class="nav-link">MacLearn</a
-      ><a href="mactime/" class="nav-link">MacTime</a
-      ><a href="macvg/" class="nav-link">MacVG</a
-      ><a href="macblog/" class="nav-link">MacBlog</a>
-      <div class="select secondselect">
-        <span id="header123">Tabs</span>
-        <ul id="cats">
-          <a href="macideas/">MacIdeas</a>
-          <a href="maclearn/">MacLearn</a>
-          <a href="mactime/">MacTime</a>
-          <a href="macvg/">MacVG</a>
-          <a href="macblog/">MacBlog</a>
-        </ul>
-      </div>
-      <div class="select">
-        <span id="header123">Help</span>
-        <ul id="cats">
-          <a href="/macblog/projects/macweb/">About</a>
-          <a href="/macblog/updates/macweb/">Updates</a>
-          <a href="/macblog/projects/macweb/">Docs</a>
-          <a href="https://forms.gle/iacBWZAYAizBsfyt9" target="_blank"
-            >Feedback</a
-          >
-        </ul>
-      </div>
-    </nav>
     <div class="macsidebar" id="sidebar">
       <a href="/"><img src="/logo.png" alt="" /></a>
       <a href="/macideas/"><img src="/MacIdeas Logo.png" alt="" /></a>
@@ -58,58 +17,60 @@
       <a href="/macvg/"><img src="/MacVG Logo.png" alt="" /></a>
       <a href="/macblog/"><img src="/MacBlog Logo.png" alt="" /></a>
     </div>
-    <div class="wrap" id="wrap">
-      <div class="flex">
-        <a href="macideas/" class="item">
-          <img src="MacIdeas Logo.png" alt="" />
+    <nav class="nav">
+      <a href="/" class="logo">
+        <img src="/logo.png" alt="MacVG Logo" />
+      </a>
+      <a href="macideas/" class="nav-link">MacIdeas</a>
+      <a href="maclearn/" class="nav-link">MacLearn</a>
+      <a href="mactime/" class="nav-link">MacTime</a>
+      <a href="macvg/" class="nav-link">MacVG</a>
+      <a href="macblog/" class="nav-link">MacBlog</a>
+      <div class="right">
+        <div class="select help-menu" id="help-menu">
+          <span id="header123" class="help-menu">Help</span>
+          <img src="caret.svg" class="caret help-menu" id="caret" />
+          <ul id="cats" class="help-menu">
+            <a href="/macblog/projects/macweb/">About</a>
+            <a href="/macblog/updates/macweb/">Updates</a>
+            <a href="/macblog/projects/macweb/">Docs</a>
+            <a href="https://forms.gle/iacBWZAYAizBsfyt9" target="_blank">
+              Feedback
+            </a>
+          </ul>
+        </div>
+        <img src="profile.svg" class="profile" id="profile" />
+      </div>
+    </nav>
+    <div class="wrap">
+      <div class="hero">
+        <h1 class="hero-title">Welcome to MacWeb!</h1>
+        <p class="hero-des">
+          Select an app below to start experiencing the future of the web.
+        </p>
+      </div>
+      <div class="apps">
+        <a href="macideas/" class="app">
+          <img src="MacIdeas Logo.png" />
           <p class="text">MacIdeas</p>
         </a>
-        <a href="maclearn/" class="item">
-          <img src="MacLearn Logo.png" alt="" />
+        <a href="maclearn/" class="app">
+          <img src="MacLearn Logo.png" />
           <p class="text">MacLearn</p>
         </a>
-        <a href="mactime/" class="item">
-          <img src="MacTime Logo.png" alt="" />
-          <p class="text">MacTime</p></a
-        >
-        <a href="macvg/" class="item">
-          <img src="MacVG Logo.png" alt="" />
-          <p class="text">MacVG</p></a
-        >
-        <a href="macblog/" class="item">
-          <img src="MacBlog Logo.png" alt="" />
-          <p class="text">MacBlog</p></a
-        >
+        <a href="mactime/" class="app">
+          <img src="MacTime Logo.png" />
+          <p class="text">MacTime</p>
+        </a>
+        <a href="macvg/" class="app">
+          <img src="MacVG Logo.png" />
+          <p class="text">MacVG</p>
+        </a>
+        <a href="macblog/" class="app">
+          <img src="MacBlog Logo.png" />
+          <p class="text">MacBlog</p>
+        </a>
       </div>
-      <!--
-      <form action="https://google.com/search" method="get" target="_blank" class="go-form">
-        <input
-          type="text"
-          placeholder="Type in anything, do everything. (Powered by Google)"
-          class="go"
-          id="macgo"
-          autocomplete="off"
-          draggable="false"
-          name="q"
-        />
-      </form>
-      <footer class="footer">
-        <spam class="item"><a href="/macblog/" target="_blank"
-            >MacBlog</a
-          ></spam
-        ><spam class="item"
-          ><a href="/macblog/projects/" target="_blank"
-            >Projects</a
-          ></spam
-        ><spam class="item"
-          >© 2024 <a href="/">MacWeb</a></spam
-        ><spam class="item"
-          ><a href="/">Policies</a></spam
-        ><spam class="item"
-          ><a href="/">Settings</a></spam
-        >
-      </footer>
-  -->
     </div>
   </body>
 </html>

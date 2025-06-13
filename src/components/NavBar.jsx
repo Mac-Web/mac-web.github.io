@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { logo, mode, github } from "../assets/assets";
+import { mode, github } from "../assets/assets";
 
 function NavBar() {
   const [lightMode, setLightMode] = useState(localStorage.getItem("mode") ? JSON.parse(localStorage.getItem("mode")) : false);
@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <nav className="nav">
       <a to="/" className="nav-logo">
-        <img src={logo} /> MacWeb
+        <img src="/logo.png" /> MacWeb
       </a>
       <div className="nav-links">
         <a href="https://mac-web.github.io/macvg/" className="nav-link">
